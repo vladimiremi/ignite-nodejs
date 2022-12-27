@@ -15,4 +15,10 @@ categoriesRouter.post("/", (request, response) => {
   return response.status(200).json(category);
 });
 
+categoriesRouter.get("/", (request, response) => {
+  const all = categoriesRepository.list();
+
+  return response.json(all);
+});
+
 export { categoriesRouter };
