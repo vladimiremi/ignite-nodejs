@@ -5,6 +5,6 @@ const specificationsRouter = Router();
 
 const createSpecificationController = new CreateSpecificationController();
 
-specificationsRouter.post("/", createSpecificationController.execute);
+specificationsRouter.post("/", createSpecificationController.handle);
 
 export { specificationsRouter };
