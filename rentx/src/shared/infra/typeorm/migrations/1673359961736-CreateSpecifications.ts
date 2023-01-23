@@ -22,6 +22,7 @@ export class CreateSpecifications1673359961736 implements MigrationInterface {
           {
             name: "created_at",
             type: "timestamp",
+            default: "now()",
           },
         ],
       })
