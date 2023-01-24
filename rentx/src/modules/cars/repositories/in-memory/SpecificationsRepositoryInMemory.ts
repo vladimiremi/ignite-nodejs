@@ -30,8 +30,6 @@ class SpecificationsRepositoryInMemory implements ISpecificationsRepository {
   }
 
   async findByIds(ids: string[]): Promise<Specifications[]> {
-    console.log("ids", ids);
-    console.log("specifications", this.specifications);
     const specifications = this.specifications.filter((specification) =>
       ids.includes(specification.id)
     );
